@@ -94,7 +94,7 @@ export default function Home() {
     // </main>
     <>
       <div className={styles.introBox}>
-        <div>
+        <div className={styles.box}>
           <p className={styles.hii}>Hii, I'm Rajnish Sharma</p>
           <h1 className={styles.position}>Software developer</h1>
           <p className={styles.bio}>With a passion for full-stack development, <br />
