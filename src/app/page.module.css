@@ -9,6 +9,35 @@
   /* padding: 10rem; */
   min-height: 100vh;
 }
+.contact{
+  color: azure;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin {
+  font-size: 30px;
+  color: azure;
+  cursor: pointer;
+
+}
+.icons{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.instagram {
+  font-size: 25px;
+  color: azure;
+  cursor: pointer;
+}
 
 .hii {
   color: aliceblue;
@@ -41,19 +70,27 @@
   text-align: center;
   border-radius: 10px;
   margin-top: 20px;
+  margin-right: 10px;
+}
+
+.project:hover {
+  background-color: white;
+  color: black;
 }
 
 @media (min-width: 100px) and (max-width: 481px) {
   .introBox {
     padding: 20px;
-    
+
 
   }
+
   .box {
     margin-top: 200px;
   }
+
   .position {
-    font-size:35px;
+    font-size: 35px;
   }
 }
 
