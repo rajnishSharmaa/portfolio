@@ -118,12 +118,33 @@
   display: flex;
   justify-content:space-between;
   padding: 50px;
+ 
   
+}
+.exp{
+  display: flex;
+  justify-content: space-around;
+}
+.experience{
+  padding: 20px;
+  border: 5px solid black;
+  margin: 100px;
+
+}
+.backend{
+  width: 40%;
+  text-align: center;
+
+  border-radius: 20px;
+}
+.about{
+  width: 60%;
 }
 .card{
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 30px;
+  box-shadow: 10px 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
 }
 /* .servicescard{
@@ -151,6 +172,12 @@
     height: 70vh;
 
 
+  }
+  .backend{
+    width: 100%;
+  }
+  .experience{
+    margin: 10px;
   }
   .mywork{
     margin-top: 30px;
