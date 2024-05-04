@@ -1,17 +1,19 @@
 .introBox {
   background-color: black;
-  padding: 200px;
+  padding-top: 200px;
+  padding-left: 150px;
+  padding-bottom: 150px;
   /* margin-top: 100px; */
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
   /* align-items: center; */
   /* padding: 10rem; */
-  min-height: 100vh;
+   /* min-height: 100vh;  */
 }
 .contact{
   color: azure;
-  background-color: black;
+  /* background-color: black; */
   min-height: 100vh;
 }
 
@@ -41,6 +43,7 @@
 
 .hii {
   color: aliceblue;
+  font-size:20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -48,19 +51,20 @@
 .position {
   color: aliceblue;
   margin: 10px 0 10px 0;
-  font-size: xxx-large;
+  font-size:70px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .bio {
 
   color: aliceblue;
+  font-size:20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 }
 
-.project {
+.getintouch {
   border: 1px solid white;
   background-color: black;
   cursor: pointer;
@@ -73,17 +77,101 @@
   margin-right: 10px;
 }
 
-.project:hover {
+.getintouch:hover {
   background-color: white;
   color: black;
 }
 
+
+
+.mywork{
+  margin-top: 30px;
+ font-size: 25px;
+  padding-left: 150px;
+  
+}
+.myservices{
+  padding-top: 30px;
+ margin-top: 30px;
+  font-size: 25px;
+   padding-left: 150px;
+   color: white;
+  
+}
+.servicesheading{
+  margin-top: 10px;
+
+ color: white;
+  padding-left: 150px;
+}
+.services{
+  background-color: black;
+}
+.recent{
+  margin-top: 10px;
+ 
+  padding-left: 150px;
+
+}
+
+.allwork{
+  display: flex;
+  justify-content:space-between;
+  padding: 50px;
+  
+}
+.card{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+ 
+}
+/* .servicescard{
+  width: 100%;
+  padding: 10px;
+  height: 80vh;
+  border-radius: 30px;
+  background-image:url("https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038903.jpg?t=st=1714829316~exp=1714832916~hmac=5d5f8dbbc5b3778b3e4f1ecfa27ef92abaf2bca09f8c1ab94f6c55bb43e2c3b0&w=740");
+
+} */
+.footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.cardtitle{
+  text-align: center;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 @media (min-width: 100px) and (max-width: 481px) {
   .introBox {
     padding: 20px;
+    height: 70vh;
 
 
   }
+  .mywork{
+    margin-top: 30px;
+ 
+    padding-left: 50px;
+  }
+  .myservices{
+    padding-left: 50px;
+  }
+  .servicesheading{
+    padding-left: 50px;
+  }
+  .recent{
+    margin-top: 30px;
+ 
+    padding-left: 50px;
+  }
+  .allwork{
+    flex-direction: column;
+  }
+
 
   .box {
     margin-top: 200px;
