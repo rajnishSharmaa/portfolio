@@ -105,28 +105,28 @@ export default function Home() {
 
 <h4 className={styles.recent}>MY WORK EXPERIENCE</h4> */}
     
-    <div className={styles.experience}>
+    {/* <div className={styles.experience}> */}
 
-      <div className={styles.exp}>
+      {/* <div className={styles.exp}>
         <div className={styles.backend}>
-          <h1>Backend Dveloper</h1>
+          <h1>Backend Developer</h1>
           <p>NOV 2023 - PRESENT</p>
 
-        </div>
+        </div> */}
         {/* <div className={styles.about}>
           <h2>About Company</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
         </div> */}
-      </div>
+      {/* </div> */}
 
-    </div>
+    {/* </div> */}
 
 
 
-  <div className={styles.footer}>
+  {/* <div className={styles.footer}>
     <p>© 2023 copyright all right reserved</p>
 
-  </div>
+  </div> */}
 
 
 
