@@ -84,11 +84,34 @@
 
 
 
-.mywork{
+.aboutme{
   margin-top: 30px;
- font-size: 25px;
+ font-size: 35px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-left: 150px;
   
+}
+.about{
+  display: flex;
+  margin-top: 20px;
+
+}
+.tech{
+  display: flex;
+  margin-top: 15px;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+.techlist{
+  font-size: 20px;
+  margin-top: 20px;
+  
+}
+.introduction{
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left:150px;
 }
 .myservices{
   padding-top: 30px;
@@ -124,11 +147,16 @@
 .exp{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  
 }
 .experience{
-  padding: 20px;
+  /* padding: 20px; */
   border: 5px solid black;
-  margin: 100px;
+  margin: 50px;
 
 }
 .backend{
@@ -147,14 +175,14 @@
   box-shadow: 10px 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
 }
-/* .servicescard{
-  width: 100%;
-  padding: 10px;
+.servicescard{
+  /* width: 100%; */
+  /* padding: 10px; */
   height: 80vh;
   border-radius: 30px;
   background-image:url("https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038903.jpg?t=st=1714829316~exp=1714832916~hmac=5d5f8dbbc5b3778b3e4f1ecfa27ef92abaf2bca09f8c1ab94f6c55bb43e2c3b0&w=740");
 
-} */
+}
 .footer{
   background-color: black;
   color: white;
@@ -179,9 +207,19 @@
   .experience{
     margin: 10px;
   }
+  .myself{
+    text-align:left
+  }
   .mywork{
     margin-top: 30px;
  
+    padding-left: 50px;
+  }
+  .introduction{
+    padding-left: 50px;
+   
+  }
+  .aboutme{
     padding-left: 50px;
   }
   .myservices{
