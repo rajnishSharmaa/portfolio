@@ -4,7 +4,13 @@ import Link from "next/link";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { CgInstagram } from "react-icons/cg";
 
+// import 'bootstrap/dist/css/bootstrap.css';
+
 export default function Home() {
+  const technologies = [
+    ["React.js", "Next.js", "JavaScript ", "Bootstrap"],
+    ["Node.js", "Express.js", "Socket.io"],
+  ];
   return (
     <>
 
@@ -43,32 +49,52 @@ export default function Home() {
 
 
 
-{/* 
-      <p className={styles.mywork} >MY WORK</p>
 
-      <h4 className={styles.recent}>R E C E N T &nbsp;&nbsp; P R O J E C T</h4>
+      <p className={styles.aboutme} >____About Me</p>
 
-      <div className={styles.allwork}>
-        <div ><img className={styles.card} src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <p className={styles.cardtitle}>Website Design</p></div>&nbsp;&nbsp;&nbsp;&nbsp;
-        <div ><img className={styles.card} src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <p className={styles.cardtitle}>Backend Restful API's</p></div>&nbsp;&nbsp;&nbsp;&nbsp;
-        <div ><img className={styles.card} src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <p className={styles.cardtitle}>Chat Application</p></div>
+      <div className={styles.about}>
+        <div className={styles.introduction}>
+          <p className={styles.myself}>MySelf Rajnish Sharma, and I am a passionate software engineer and problem solver, dedicated to
+            creating impactful codes that thrive on the internet.</p>
 
+          <p className={styles.techlist}> Here are a few technologies I haveve been working with recently :</p>
+          <div className={styles.tech}>
+            <div>
 
-      </div> */}
+              {technologies[0].map((tech, index) => {
+                return (
+                  <div key={index} className="flex flex-row items-center space-x-2">
 
-      {/* <div className={styles.allwork}>
-        <div ><img className={styles.card} src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <p className={styles.cardtitle}>Website Design</p></div>
-        <div ><img className={styles.card} src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <p className={styles.cardtitle}>Backend Restful API's</p></div>
-        <div ><img className={styles.card} src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <p className={styles.cardtitle}>Chat Application</p></div>
+                    <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                  </div>
+                );
+              })}
 
 
-      </div> */}
+            </div>
+            <div>
+              {technologies[1].map((tech, index) => {
+                return (
+                  <div key={index} className="flex flex-row items-center space-x-2">
+                    {/* <ArrowIcon className={"h-3 w-3 text-AAsecondary"} /> */}
+                    <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+          </div>
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+
+
+
+
+
 
 
 
@@ -80,15 +106,15 @@ export default function Home() {
 
         <div>
           <div className={styles.allwork}>
-            <div ><p className={styles.servicescard} >Provide best web development</p>
+            <div  ><p  >Provide best web development</p>
               <p className={styles.cardtitle}>Website Design</p>
             </div>
-            <div ><p className={styles.servicescard}>Admin Panel</p>
+            <div ><p >Admin Panel</p>
               <p className={styles.cardtitle}>Backend Restful API's</p>
-              </div>
-            <div ><p className={styles.servicescard}>Mobile App</p>
+            </div>
+            <div  ><p >Mobile App</p>
               <p className={styles.cardtitle}>Chat Application</p>
-              </div>
+            </div>
 
 
           </div>
@@ -100,33 +126,52 @@ export default function Home() {
 
       </div> */}
 
-      
-{/* <p className={styles.mywork} >EXPERIENCE</p>
+      {/* 
+      <p className={styles.mywork} >EXPERIENCE</p>
 
-<h4 className={styles.recent}>MY WORK EXPERIENCE</h4> */}
-    
-    {/* <div className={styles.experience}> */}
+      <h4 className={styles.recent}>MY WORK EXPERIENCE</h4>
 
-      {/* <div className={styles.exp}>
-        <div className={styles.backend}>
-          <h1>Backend Developer</h1>
-          <p>NOV 2023 - PRESENT</p>
+      <div className={styles.experience}>
 
-        </div> */}
-        {/* <div className={styles.about}>
-          <h2>About Company</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-        </div> */}
-      {/* </div> */}
+        <div className={styles.exp}>
+          <div className={styles.backend}>
+            <h1>INTERNSHIP</h1>
+            <p>NOV 2022 - JAN 2023</p>
 
-    {/* </div> */}
+          </div>
+          <div className={styles.about}>
+            <h2>About Company</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div className={styles.experience}>
+
+        <div className={styles.exp}>
+          <div className={styles.backend}>
+            <h1>Software Developer</h1>
+            <p>JAN 2023 - PRESENT</p>
+
+          </div>
+          <div className={styles.about}>
+            <h2>About Company</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+          </div>
+        </div>
+
+      </div>
+
+    */}
 
 
 
-  {/* <div className={styles.footer}>
-    <p>© 2023 copyright all right reserved</p>
 
-  </div> */}
+      <div className={styles.footer}>
+        <p>© 2023 copyright all right reserved</p>
+
+      </div>
 
 
 
