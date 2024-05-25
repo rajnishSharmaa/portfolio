@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles.btn}>
             <div>
               <button className={styles.getintouch}><Link href="/contact">
-                <strong>GET IN TOUCH -</strong>
+                <strong style={{color:"white"}}>GET IN TOUCH -</strong>
               </Link></button>
             </div>
             <div className={styles.icons}>
@@ -54,10 +54,10 @@ export default function Home() {
 
       <div className={styles.about}>
         <div className={styles.introduction}>
-          <p className={styles.myself}>MySelf Rajnish Sharma, and I am a passionate software engineer and problem solver, dedicated to
+          <p className={styles.myself}>MySelf Rajnish Sharma, and I am a passionate software engineer and problem solver,<br/> dedicated to
             creating impactful codes that thrive on the internet.</p>
 
-          <p className={styles.techlist}> Here are a few technologies I haveve been working with recently :</p>
+          <p className={styles.techlist}> Here are a few technologies I have been working with recently :</p>
           <div className={styles.tech}>
             <div>
 
@@ -65,7 +65,7 @@ export default function Home() {
                 return (
                   <div key={index} className="flex flex-row items-center space-x-2">
 
-                    <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                    <span className="text-gray-400 sm:text-sm text-xs">&#x2022; {tech}</span>
                   </div>
                 );
               })}
@@ -77,7 +77,7 @@ export default function Home() {
                 return (
                   <div key={index} className="flex flex-row items-center space-x-2">
                     {/* <ArrowIcon className={"h-3 w-3 text-AAsecondary"} /> */}
-                    <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                    <span className="text-gray-400 sm:text-sm text-xs">&#x2022; {tech}</span>
                   </div>
                 );
               })}
@@ -98,7 +98,7 @@ export default function Home() {
 
 
 
-      {/* <div className={styles.services}>
+      <div className={styles.services}>
         <p className={styles.myservices} >SERVICES</p>
 
         <h4 className={styles.servicesheading}>D E S I G N &nbsp; S E R V I C E S &nbsp; I&nbsp;  A M &nbsp; P R O V I D I N G</h4>
@@ -109,9 +109,7 @@ export default function Home() {
             <div  ><p  >Provide best web development</p>
               <p className={styles.cardtitle}>Website Design</p>
             </div>
-            <div ><p >Admin Panel</p>
-              <p className={styles.cardtitle}>Backend Restful API's</p>
-            </div>
+           
             <div  ><p >Mobile App</p>
               <p className={styles.cardtitle}>Chat Application</p>
             </div>
@@ -124,7 +122,7 @@ export default function Home() {
 
 
 
-      </div> */}
+      </div>
 
       {/* 
       <p className={styles.mywork} >EXPERIENCE</p>
