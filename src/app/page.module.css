@@ -44,14 +44,14 @@
 }
 
 .hii {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .position {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   margin: 10px 0 10px 0;
   font-size: 70px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -101,27 +101,30 @@
 
 
 .aboutme {
-  margin-top: 50px;
+  padding-top: 50px;
   font-size: 35px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-left: 150px;
- 
 
+  background-color: black;
+  color: white;
 }
 
 
 .about {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  padding-top: 20px;
   padding-right: 150px;
+  background-color: black;
+  color: white;
 
 
 }
 
 .tech {
   display: flex;
-  margin-top: 15px;
+  padding: 15px;
   gap: 50px;
   margin-bottom: 50px;
 }
@@ -133,17 +136,17 @@
 }
 
 .introduction {
-  margin-top: 30px;
+  padding: 30px;
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-left: 110px;
-  
+
 }
 
 
 .myservices {
   padding-top: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
   font-size: 25px;
   padding-left: 150px;
   color: white;
@@ -233,10 +236,32 @@
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.img{
+
+.img {
   border-radius: 200px 20px 20px 20px;
   box-shadow: 10px 10px black;
 }
+
+.whatnext {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 150px;
+  padding-bottom: 200px;
+ 
+
+
+}
+
+.joinbtn {
+  padding: 15px;
+  background-color: black;
+  border: 1px solid white;
+  margin-top: 30px;
+  cursor: pointer;
+
+}
+
 
 @media (min-width: 100px) and (max-width: 481px) {
   .introBox {
@@ -253,9 +278,11 @@
   .experience {
     margin: 10px;
   }
-.servicesheading{
-  font-size: small;
-}
+
+  .servicesheading {
+    font-size: small;
+  }
+
   /* .myself {
     text-align: left
   } */
@@ -274,14 +301,16 @@
   .aboutme {
     padding-left: 50px;
   }
-  .about{
+
+  .about {
     flex-direction: column;
     padding-right: 0px;
-    
+
   }
-  .myimg{
+
+  .myimg {
     padding-left: 60px;
-    
+
   }
 
   .myservices {
