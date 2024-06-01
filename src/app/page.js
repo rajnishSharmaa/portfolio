@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { CgInstagram } from "react-icons/cg";
+import { colors } from "@nextui-org/react";
 
 // import 'bootstrap/dist/css/bootstrap.css';
 
@@ -16,7 +17,7 @@ export default function Home() {
 
       <div className={styles.introBox}>
         <div className={styles.box}>
-          <p className={styles.hii}>I'm Rajnish Sharma</p>
+          <p className={styles.hii}>I'm <span style={{color:"#0CDE6F"}}>Rajnish Sharma</span></p>
           <h1 className={styles.position}>Software developer</h1>
           <p className={styles.bio}>With a passion for full-stack development, <br />
             I am a proficient developer capable of designing and developing complex applications with expertise in React and Node.js.</p>
@@ -24,19 +25,20 @@ export default function Home() {
 
           <div className={styles.btn}>
             <div>
-              <button className={styles.getintouch}><Link href="/contact">
+              <Link href="/contact"><button className={styles.getintouch}>
                 <strong style={{ color: "white" }}>GET IN TOUCH -</strong>
-              </Link></button>
+                </button> </Link>
             </div>
             <div className={styles.icons}>
 
               <div>
-                <Link href="https://www.linkedin.com/in/rajnish-sharma-48a612249/"><TbBrandLinkedin href="www.linkedin.com" className={styles.linkedin} /></Link>
+                <Link href="https://www.linkedin.com/in/rajnish-sharma-48a612249/"><TbBrandLinkedin className={styles.linkedin} /></Link>
 
               </div>&nbsp;
 
               <div>
-                <CgInstagram className={styles.instagram} />
+                <Link href="https://www.instagram.com/rajnish_sharmaa?igsh=MWt5ZWh5cThxYXp3bA%3D%3D&utm_source=qr"><CgInstagram className={styles.instagram} /></Link>
+                
               </div>
             </div>
           </div>
@@ -50,7 +52,7 @@ export default function Home() {
 
 
 
-      <p className={styles.aboutme} >____About Me</p>
+      <p className={styles.aboutme} >____<span style={{color:"#0CDE6F"}}>About Me</span></p>
 
       <div className={styles.about}>
         <div className={styles.introduction}>
@@ -84,12 +86,12 @@ export default function Home() {
 
           </div>
         </div>
-        <div className={styles.myimg}>
+        {/* <div className={styles.myimg}> */}
 
-        {/* <img className={styles.img} src="/img.jpg" alt="Girl in a jacket" width="310" height="350"/> */}
-        <img className={styles.img} src="https://img.freepik.com/free-photo/view-3d-man-holding-laptop_23-2150709818.jpg?t=st=1717231700~exp=1717235300~hmac=dbca6ac0d2fd5d1a89cd848aff29c716e2002299a8e82ff58559e15009afa255&w=740" alt="Girl in a jacket" width="310" height="350"/>
+          {/* <img className={styles.img} src="/img.jpg" alt="Girl in a jacket" width="310" height="350"/> */}
+          {/* <img className={styles.img} src="https://img.freepik.com/free-photo/view-3d-man-holding-laptop_23-2150709818.jpg?t=st=1717231700~exp=1717235300~hmac=dbca6ac0d2fd5d1a89cd848aff29c716e2002299a8e82ff58559e15009afa255&w=740" alt="Girl in a jacket" width="310" height="350" />
 
-        </div>
+        </div> */}
 
       </div>
 
@@ -99,7 +101,7 @@ export default function Home() {
 
 
 
-
+      {/* 
       <div className={styles.services}>
         <p className={styles.myservices} >SERVICES</p>
 
@@ -124,46 +126,24 @@ export default function Home() {
 
 
 
-      </div>
+      </div> */}
 
-      {/* 
-      <p className={styles.mywork} >EXPERIENCE</p>
+      <div className={styles.whatnext}>
+        <p >What's Next?</p>
+        <h1 style={{ paddingTop: "12px", color:"#0CDE6F" }}>Get In Touch</h1>
 
-      <h4 className={styles.recent}>MY WORK EXPERIENCE</h4>
+        <p style={{ paddingTop: "25px" }}>Although I'm Always open for any new opportunities,<br /> my inbox is open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
 
-      <div className={styles.experience}>
 
-        <div className={styles.exp}>
-          <div className={styles.backend}>
-            <h1>INTERNSHIP</h1>
-            <p>NOV 2022 - JAN 2023</p>
-
-          </div>
-          <div className={styles.about}>
-            <h2>About Company</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-          </div>
+        <div>
+          <Link href="/contact"><button className={styles.joinbtn}>
+            <strong style={{ color: "white" }}>GET IN TOUCH </strong>
+          </button> </Link>
         </div>
 
-      </div>
 
-      <div className={styles.experience}>
-
-        <div className={styles.exp}>
-          <div className={styles.backend}>
-            <h1>Software Developer</h1>
-            <p>JAN 2023 - PRESENT</p>
-
-          </div>
-          <div className={styles.about}>
-            <h2>About Company</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-          </div>
-        </div>
 
       </div>
-
-    */}
 
 
 
