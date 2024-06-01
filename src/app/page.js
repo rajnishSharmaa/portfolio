@@ -86,7 +86,8 @@ export default function Home() {
         </div>
         <div className={styles.myimg}>
 
-        <img className={styles.img} src="/img.jpg" alt="Girl in a jacket" width="310" height="350"/>
+        {/* <img className={styles.img} src="/img.jpg" alt="Girl in a jacket" width="310" height="350"/> */}
+        <img className={styles.img} src="https://img.freepik.com/free-photo/view-3d-man-holding-laptop_23-2150709818.jpg?t=st=1717231700~exp=1717235300~hmac=dbca6ac0d2fd5d1a89cd848aff29c716e2002299a8e82ff58559e15009afa255&w=740" alt="Girl in a jacket" width="310" height="350"/>
 
         </div>
 
