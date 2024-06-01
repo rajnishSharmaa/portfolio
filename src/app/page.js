@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles.btn}>
             <div>
               <button className={styles.getintouch}><Link href="/contact">
-                <strong style={{color:"white"}}>GET IN TOUCH -</strong>
+                <strong style={{ color: "white" }}>GET IN TOUCH -</strong>
               </Link></button>
             </div>
             <div className={styles.icons}>
@@ -54,8 +54,7 @@ export default function Home() {
 
       <div className={styles.about}>
         <div className={styles.introduction}>
-          <p className={styles.myself}>MySelf Rajnish Sharma, and I am a passionate software engineer and problem solver,<br/> dedicated to
-            creating impactful codes that thrive on the internet.</p>
+          <p className={styles.myself}>MySelf Rajnish Sharma, and I'm passionate about creating quality products that meet all of the customer's needs, and I love learning new techniques and technologies that allow me to make that happen.</p>
 
           <p className={styles.techlist}> Here are a few technologies I have been working with recently :</p>
           <div className={styles.tech}>
@@ -85,7 +84,9 @@ export default function Home() {
 
           </div>
         </div>
-        <div>
+        <div className={styles.myimg}>
+
+        <img className={styles.img} src="/img.jpg" alt="Girl in a jacket" width="310" height="350"/>
 
         </div>
 
@@ -109,7 +110,7 @@ export default function Home() {
             <div  ><p  >Provide best web development</p>
               <p className={styles.cardtitle}>Website Design</p>
             </div>
-           
+
             <div  ><p >Mobile App</p>
               <p className={styles.cardtitle}>Chat Application</p>
             </div>
