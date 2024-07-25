@@ -299,9 +299,9 @@ text-align: center;
 
   }
 
-  .aboutme {
+  /* .aboutme {
     padding-left: 50px;
-  }
+  } */
 
   .about {
     flex-direction: column;
