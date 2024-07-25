@@ -52,11 +52,11 @@ export default function Home() {
 
 
 
-      <p className={styles.aboutme} >____<span style={{color:"#0CDE6F"}}>About Me</span></p>
+      <p className={styles.aboutme} >____<span style={{color:"#0CDE6F"}}>About Me</span>____</p>
 
       <div className={styles.about}>
         <div className={styles.introduction}>
-          <p className={styles.myself}>MySelf Rajnish Sharma, and I'm passionate about creating quality products that meet all of the customer's needs, and I love learning new techniques and technologies that allow me to make that happen.</p>
+          <p className={styles.myself}>I'm Rajnish Sharma, and I have a strong passion for creating high-quality products that fully meet customer needs. I thrive on continuously learning new techniques and technologies that enable me to achieve this goal effectively.</p>
 
           <p className={styles.techlist}> Here are a few technologies I have been working with recently :</p>
           <div className={styles.tech}>
